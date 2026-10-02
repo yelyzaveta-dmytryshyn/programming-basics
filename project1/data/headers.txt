@@ -1,0 +1,6 @@
+>seq1 Mockus exemplaris gene A, partial
+>seq2 Mockus exemplaris gene B, complete
+>seq3 Fictivia testensis 16S rRNA, partial
+>seq4 Fictivia testensis hypothetical protein, short
+>seq5 low-quality read with ambiguous bases
+>seq6 Mockus exemplaris gene C, GC-rich fragment
