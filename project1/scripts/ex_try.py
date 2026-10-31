@@ -1,11 +1,7 @@
-seq = "ATGCCCTAA"
+total = 0
+for n in [1, 2, 3, 4]:
+    total = total + n
+print(total)
 
-if len(seq) > 5:
-    print("A")
-elif len(seq) > 3:
-    print("B")
-else:
-    print("C")
-
-if seq.startswith("ATG") and seq.endswith("TAA"):
-    print("D")
+for base in "ATG":
+    print(base * 2)
