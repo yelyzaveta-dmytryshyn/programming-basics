@@ -1,7 +1,10 @@
-total = 0
-for n in [1, 2, 3, 4]:
-    total = total + n
-print(total)
+def double(x):
+    return x * 2
 
-for base in "ATG":
-    print(base * 2)
+def shout(text):
+    print(text.upper())
+
+print(double(5))
+print(double("AT"))
+result = shout("atg")
+print(result)        
