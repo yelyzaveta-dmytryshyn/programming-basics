@@ -19,9 +19,24 @@ def is_usable(seq, min_lenght=30):
 def first_atg(seq):
     return seq.find("ATG")
 
+def count_bases(seq):
+    counts = {}
+    for base in seq:
+        counts[base] = counts.get(base, 0) + 1
+    return counts
+
+def count_g(seq):
+    g_count = {}
+    for base in seq:
+        if base == "G":
+            g_count[base] = g_count.get(base, 0) + 1
+    return g_count 
+
 seq = input("Enter a sequence: ")
 
 print("GC content:", gc_content(seq))
 print("Reverse complement:", reverse_complement(seq))
 print("Sequence is usable:", is_usable(seq))
 print("Position of ATG:", first_atg(seq))
+print("Base counts:", count_bases(seq))
+print("G counts:", count_g(seq))
