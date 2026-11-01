@@ -15,6 +15,9 @@ def read_fasta(path):
 
 
 def gc_content(seq):
+    if len(seq) == 0:
+        print("Warning: empty sequence, skipping")
+        return 0
     gc = (seq.count("G") + seq.count("C")) / len(seq) * 100
     return gc
 
@@ -26,10 +29,13 @@ def report(name, seq):
     return gc
 
 
-sequences = read_fasta("sequences.fasta")
+sequences = read_fasta("tricky.fasta")
 
 results = {}
 for name, seq in sequences.items():
+    if len(seq) == 0:
+        print(f"Warning: Sequence '{name}' is empty. Skipping...")
+        continue
     results[name] = report(name, seq)
 
 average = sum(results.values()) / len(results)
@@ -37,3 +43,6 @@ print(f"Average GC: {average:.1f}%")
 
 key = list(sequences.keys())[0]
 print("Reference sequence:", sequences[key])
+
+n_count = seq.upper().count("N")
+print("N count:", n_count)
