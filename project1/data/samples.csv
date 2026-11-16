@@ -1,6 +1,13 @@
-sample,gc_content,length
-s1,41.2,1200
-s2,38.5,950
-s3,52.1,1430
-s4,47.9,1100
-s5,44.0,870
+sample,organism,gc_content,length
+s01,Homo sapiens,41.2,1200
+s02,Homo sapiens,39.8,980
+s03,Homo sapiens,43.5,1530
+s04,Homo sapiens,40.1,1100
+s05,Mus musculus,42.0,1340
+s06,Mus musculus,44.3,870
+s07,Mus musculus,41.7,1020
+s08,Escherichia coli,50.8,2100
+s09,Escherichia coli,51.2,1850
+s10,Escherichia coli,52.4,1960
+s11,Escherichia coli,49.9,760
+s12,Mus musculus,43.1,1410
